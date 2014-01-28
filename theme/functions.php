@@ -1,6 +1,6 @@
 <?php
 /**
- * Theme related functions. 
+ * Theme related functions.
  *
  */
 
@@ -11,8 +11,8 @@
  * @return string/null wether the favicon is defined or not.
  */
 function get_title($title) {
-  global $anax;
-  return $title . (isset($anax['title_append']) ? $anax['title_append'] : null);
+  global $anjo;
+  return $title . (isset($anjo['title_append']) ? $anjo['title_append'] : null);
 }
 
 

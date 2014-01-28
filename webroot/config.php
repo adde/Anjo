@@ -1,6 +1,6 @@
 <?php
 /**
- * Config-file for Anax. Change settings here to affect installation.
+ * Config-file for Anjo. Change settings here to affect installation.
  *
  */
 
@@ -9,23 +9,23 @@
  *
  */
 error_reporting(-1);              // Report all type of errors
-ini_set('display_errors', 1);     // Display all errors 
+ini_set('display_errors', 1);     // Display all errors
 ini_set('output_buffering', 0);   // Do not buffer outputs, write directly
 
 
 /**
- * Define Anax paths.
+ * Define Anjo paths.
  *
  */
-define('ANAX_INSTALL_PATH', __DIR__ . '/..');
-define('ANAX_THEME_PATH', ANAX_INSTALL_PATH . '/theme/render.php');
+define('ANJO_INSTALL_PATH', __DIR__ . '/..');
+define('ANJO_THEME_PATH', ANJO_INSTALL_PATH . '/theme/render.php');
 
 
 /**
  * Include bootstrapping functions.
  *
  */
-include(ANAX_INSTALL_PATH . '/src/bootstrap.php');
+include(ANJO_INSTALL_PATH . '/src/bootstrap.php');
 
 
 /**
@@ -37,27 +37,27 @@ session_start();
 
 
 /**
- * Create the Anax variable.
+ * Create the Anjo variable.
  *
  */
-$anax = array();
+$anjo = array();
 
 
 /**
  * Site wide settings.
  *
  */
-$anax['lang']         = 'sv';
-$anax['title_append'] = ' | Anax en webbtemplate';
+$anjo['lang']         = 'sv';
+$anjo['title_append'] = ' | Anjo en webbtemplate';
 
-$anax['header'] = <<<EOD
-<img class='sitelogo' src='img/anax.png' alt='Anax Logo'/>
-<span class='sitetitle'>Anax webbtemplate</span>
+$anjo['header'] = <<<EOD
+<img class='sitelogo' src='img/anjo.png' alt='Anjo Logo'/>
+<span class='sitetitle'>Anjo webbtemplate</span>
 <span class='siteslogan'>Återanvändbara moduler för webbutveckling med PHP</span>
 EOD;
 
-$anax['footer'] = <<<EOD
-<footer><span class='sitefooter'>Copyright (c) Mikael Roos (me@mikaelroos.se) | <a href='https://github.com/mosbth/Anax-base'>Anax på GitHub</a> | <a href='http://validator.w3.org/unicorn/check?ucn_uri=referer&amp;ucn_task=conformance'>Unicorn</a></span></footer>
+$anjo['footer'] = <<<EOD
+<footer><span class='sitefooter'>Copyright (c) Mikael Roos (me@mikaelroos.se) | <a href='https://github.com/mosbth/Anjo-base'>Anjo på GitHub</a> | <a href='http://validator.w3.org/unicorn/check?ucn_uri=referer&amp;ucn_task=conformance'>Unicorn</a></span></footer>
 EOD;
 
 
@@ -66,9 +66,9 @@ EOD;
  * Theme related settings.
  *
  */
-//$anax['stylesheet'] = 'css/style.css';
-$anax['stylesheets'] = array('css/style.css');
-$anax['favicon']    = 'favicon.ico';
+//$anjo['stylesheet'] = 'css/style.css';
+$anjo['stylesheets'] = array('css/style.css');
+$anjo['favicon']    = 'favicon.ico';
 
 
 
@@ -76,11 +76,11 @@ $anax['favicon']    = 'favicon.ico';
  * Settings for JavaScript.
  *
  */
-$anax['modernizr'] = 'js/modernizr.js';
-$anax['jquery'] = '//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js';
-//$anax['jquery'] = null; // To disable jQuery
-$anax['javascript_include'] = array();
-//$anax['javascript_include'] = array('js/main.js'); // To add extra javascript files
+$anjo['modernizr'] = 'js/modernizr.js';
+$anjo['jquery'] = '//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js';
+//$anjo['jquery'] = null; // To disable jQuery
+$anjo['javascript_include'] = array();
+//$anjo['javascript_include'] = array('js/main.js'); // To add extra javascript files
 
 
 
@@ -88,4 +88,4 @@ $anax['javascript_include'] = array();
  * Google analytics.
  *
  */
-$anax['google_analytics'] = 'UA-22093351-1'; // Set to null to disable google analytics
+$anjo['google_analytics'] = 'UA-22093351-1'; // Set to null to disable google analytics

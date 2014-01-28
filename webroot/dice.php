@@ -1,10 +1,10 @@
-<?php 
+<?php
 /**
- * This is a Anax pagecontroller.
+ * This is a Anjo pagecontroller.
  *
  */
-// Include the essential config-file which also creates the $anax variable with its defaults.
-include(__DIR__.'/config.php'); 
+// Include the essential config-file which also creates the $anjo variable with its defaults.
+include(__DIR__.'/config.php');
 
 
 
@@ -32,17 +32,17 @@ if($roll) {
 
 
 
-// Do it and store it all in variables in the Anax container.
-$anax['title'] = "Kasta tärning";
+// Do it and store it all in variables in the Anjo container.
+$anjo['title'] = "Kasta tärning";
 
-$anax['main'] = <<<EOD
+$anjo['main'] = <<<EOD
 <h1>Kasta tärning</h1>
-<p>Detta är en exempelsida som visar hur Anax fungerar tillsammans med återanvändbara moduler.</p>
+<p>Detta är en exempelsida som visar hur Anjo fungerar tillsammans med återanvändbara moduler.</p>
 <p>Hur många kast vill du göra, <a href='?roll=1'>1 kast</a>, <a href='?roll=3'>3 kast</a> eller <a href='?roll=6'>6 kast</a>? </p>
 {$html}
 EOD;
 
 
 
-// Finally, leave it all to the rendering phase of Anax.
-include(ANAX_THEME_PATH);
+// Finally, leave it all to the rendering phase of Anjo.
+include(ANJO_THEME_PATH);
