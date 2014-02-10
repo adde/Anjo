@@ -1,18 +1,18 @@
-Anax-base
+Anjo-base
 =========
 
 A webbtemplate / boilerplate for smaller websites and webbapplications using PHP.
 
-Built by Mikael Roos.
+Built by Andreas Jönsson.
 
 Read article about this here: http://dbwebb.se/kunskap/anax-en-hallbar-struktur-for-dina-webbapplikationer
 
 
 
-License 
+License
 ------------------
 
-This software is free software and carries a MIT license.
+This software is free software and carries a WTFPL license.
 
 
 
@@ -26,41 +26,38 @@ The following external modules are included and subject to its own license.
 ### Modernizr
 * Website: http://modernizr.com/
 * Version: 2.6.2
-* License: MIT license 
+* License: MIT license
 * Path: included in `webroot/js/modernizr.js`
+
+### jQuery
+* Website: http://jquery.com/
+* Version: 1.10.1
+* License: MIT license
+
+### Bootstrap
+* Website: http://getbootstrap.com/
+* Version: 3.1.0
+* License: MIT license
+
+### FontAwesome
+* Website: http://fontawesome.io/
+* Version: 4.0.3
+* License: SIL OFL 1.1, MIT license, CC BY 3.0 License
 
 
 
 History
 -----------------------------------
 
+v1.0.0 (2014-02-10)
 
-v1.0.3 (2013-11-22)
-
-* Naming of session in `webroot/config.php` allows only alphanumeric characters.
-
-
-v1.0.2 (2013-09-23)
-
-* Needs to define the ANAX_INSTALL path before using it. v1.0.1 did not work.
-
-
-v1.0.1 (2013-09-19)
-
-* `config.php`, including `bootstrap.php` before starting session, needs the autoloader()`.
-
-
-v1.0.0 (2013-06-28)
-
-* First release after initial article on Anax.
+* First release after initial fork from Anax.
 
 
 
 ------------------
- .  
-..:
 
-Copyright (c) 2013 Mikael Roos
+Copyright (c) 2014 Andreas Jönsson
 
 
 
